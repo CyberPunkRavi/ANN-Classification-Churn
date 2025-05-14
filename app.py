@@ -7,7 +7,7 @@ import tensorflow as tf
 import streamlit as st
 
 #Load model file
-model = load_model('model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 #Load encoder and scaler files
 
