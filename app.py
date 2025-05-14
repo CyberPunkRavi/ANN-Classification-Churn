@@ -7,14 +7,14 @@ import tensorflow as tf
 import streamlit as st
 
 #Load model file
-model = load_model('./model.h5')
+model = load_model('model.h5')
 
 #Load encoder and scaler files
 
-with open('./label_encoder_gender.pkl', 'rb') as file:
+with open('label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
 
-with open('./onehot_encoder_geo.pkl', 'rb') as file:
+with open('onehot_encoder_geo.pkl', 'rb') as file:
     onehot_geoencoder = pickle.load(file)
 
 with open('scalar.pkl', 'rb') as file:
